@@ -1,0 +1,1 @@
+python .\MachinistAOE-Sim.py [TIME IN SECOND] [NUMBER OF TARGETS]
