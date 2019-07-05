@@ -68,10 +68,10 @@ def main():
       bioblastRecast = SPREAD_RECAST
       heatGauge += 5
         
-      if (autoCD <= 0):
-        totalDamage += AUTO_POTENCY
-        if ATTACK_MESSAGES: print("Auto:         %.2f     Potency: %.2f     Time: %.2f    Heat: %d" % (AUTO_POTENCY, totalDamage, totalTime/100, heatGauge))
-        autoCD = AUTO_RECAST  
+    if (autoCD <= 0):
+      totalDamage += AUTO_POTENCY
+      if ATTACK_MESSAGES: print("Auto:         %.2f     Potency: %.2f     Time: %.2f    Heat: %d" % (AUTO_POTENCY, totalDamage, totalTime/100, heatGauge))
+      autoCD = AUTO_RECAST  
         
     spreadRecast -= TIME_STEP
     crossbowRecast -= TIME_STEP
